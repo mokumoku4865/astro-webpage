@@ -5,6 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	base: "/dist",
+	trailingSlash: "never",
 	integrations: [
 		starlight({
 			title: 'Astro+Starlightのテスト',
