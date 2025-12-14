@@ -1,12 +1,12 @@
 ---
-title: ルールのテンプレート
+title: [題名]
 description: 条文を記載するためのテンプレートです。
 ---
-# ルール名
-
 ## 第一章　総則
 
-### 第一条（テスト文章）
+### 第一節　○○
+
+#### 第一条（テスト文章）
 
 1\. Reference pages are ideal for outlining how things work in terse and clear terms.
 
