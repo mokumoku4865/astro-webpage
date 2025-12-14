@@ -8,6 +8,15 @@ import relativeLinks from 'astro-relative-links';
 export default defineConfig({
     base: "/dist",
     trailingSlash: "never",
+    compressHTML: false,
+    build: {
+        inlineStylesheets: 'never',
+    },
+    vite: {
+        build: {
+            cssCodeSplit: false,
+        },
+    },
     integrations: [starlight({
         title: 'Astro+Starlightのテスト',
         social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
@@ -24,5 +33,5 @@ export default defineConfig({
                 autogenerate: { directory: 'reference' },
             },
         ],
-		}), relativeLinks()],
+    }), relativeLinks()],
 });
