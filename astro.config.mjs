@@ -21,16 +21,24 @@ export default defineConfig({
         title: 'Astro+Starlightのテスト',
         social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
         sidebar: [
+            //{
+            //   label: 'ルール',
+            //    items: [
+            //        // Each item here is one entry in the navigation menu.
+            //        { label: 'Example Guide', slug: 'guides/example' },
+            //    ],
+            //},
             {
-                label: 'Guides',
-                items: [
-                    // Each item here is one entry in the navigation menu.
-                    { label: 'Example Guide', slug: 'guides/example' },
-                ],
+                label: 'ルール',
+                autogenerate: { directory: 'rules' },
             },
             {
-                label: 'Reference',
-                autogenerate: { directory: 'reference' },
+                label: 'チュートリアル',
+                autogenerate: { directory: 'tutorial' },
+            },
+            {
+                label: 'プラグイン解説',
+                autogenerate: { directory: 'plugin' },
             },
         ],
     }), relativeLinks()],
