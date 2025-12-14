@@ -7,7 +7,7 @@ import relativeLinks from 'astro-relative-links';
 // https://astro.build/config
 export default defineConfig({
     base: "/personal/astro",
-    trailingSlash: "never",
+    // trailingSlash: "never",
     compressHTML: false,
     build: {
         inlineStylesheets: 'never',
