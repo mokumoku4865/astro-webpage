@@ -6,7 +6,7 @@ import relativeLinks from 'astro-relative-links';
 
 // https://astro.build/config
 export default defineConfig({
-    base: "/personal/astro",
+    base: "/astro",
     // trailingSlash: "never",
     compressHTML: false,
     build: {
