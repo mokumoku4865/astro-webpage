@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 import relativeLinks from 'astro-relative-links';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
     base: "/astro",
@@ -41,5 +43,5 @@ export default defineConfig({
                 autogenerate: { directory: 'plugin' },
             },
         ],
-    }), relativeLinks()],
+    }), relativeLinks(), sitemap()],
 });
